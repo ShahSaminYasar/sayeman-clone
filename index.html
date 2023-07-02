@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayeman Resort Clone</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Owl Carousel 2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="menu_div">
+          <a href="#" onclick="toggleNavlinks()"
+            ><div id="menu_button_text">Menu |</div>
+            <div class="mobile_menu_button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span></div
+          ></a>
+        </div>
+        <a class="logo_div"> TIMES Palace </a>
+        <div class="text_div">
+          <span class="text">Book Now</span>
+          <span class="text">+8801234567890</span>
+        </div>
+      </div>
+      <nav class="navlinks">
+        <div class="container navlinks_content">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Accommodations</a></li>
+            <li><a href="#">Restaurents & Bar</a></li>
+            <li><a href="#">Meetings & Events</a></li>
+            <li><a href="#">Relaxations</a></li>
+            <li><a href="#">Recreations</a></li>
+            <li><a href="#">Online Booking</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Press Release</a></li>
+          </ul>
+          <div>
+            <div class="info_box">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p>
+                Times Beach Resort, Marine Drive Road, Kolatali, Cox's Bazar,
+                Bangladesh
+              </p>
+            </div>
+            <div class="info_box">
+              <i class="fa-solid fa-phone"></i>
+              <p>+88 01810 666 909, +88 01314782925</p>
+            </div>
+            <div class="social_links">
+              <p>Join Us</p>
+              <div class="social_link_icons">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="partners_links">
+              <a href="#"><img src="./media/p1.jpg" alt="" /></a>
+              <a href="#"><img src="./media/p2.jpg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <section id="hero">
+        <div
+          id="hero_carousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#hero_carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero_carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero_carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="./media/1.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel_image_layer"></div>
+              <div class="carousel-caption d-block">
+                <h1>TIMES BEACH RESORT</h1>
+                <h2>An ode to luxury of unforgotable memories.</h2>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./media/2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel_image_layer"></div>
+              <div class="carousel-caption d-block">
+                <h1>TIMES BEACH RESORT</h1>
+                <h2>An ode to luxury of unforgotable memories.</h2>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./media/3.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel_image_layer"></div>
+              <div class="carousel-caption d-block">
+                <h1>TIMES BEACH RESORT</h1>
+                <h2>An ode to luxury of unforgotable memories.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="container">
+          <div class="section_title">
+            <span>Welcome to</span>
+            <h2>TIMES Beach Resort</h2>
+          </div>
+          <p>
+            In Cox’s Bazar-Bangladesh, After fifty years of glorious past, Times
+            Beach Resort revives its famed legacy of comfort, elegance and
+            impeccable service. An eminent landmark constructed in 1964, this
+            legendary first private hotel in Cox’s Bazar is reborn, infusing
+            modern sophistication into this vintage-chic, iconic hotel at a new
+            beachfront location of Marine Drive, Kolatoli, Cox’s Bazar.
+          </p>
+          <p>
+            With its richly historic past, the Hotel Times now fully becomes a
+            part of the exciting and rapidly changing present with the addition
+            of a modern, elegant luxury ocean front hotel in Cox’s Bazar. The
+            beauty of Cox’s Bazar – the climate, the panoramic ocean views, the
+            sandy beaches, plus the rich culture and history along with the
+            warmth of the sun – is what attracts people here. And the Times
+            Beach Resort provides you exactly just that with extraordinary
+            comfort, luxury and services.
+          </p>
+        </div>
+      </section>
+
+      <!-- Surprises section -->
+      <section id="surprises">
+        <img src="./media/video1.jpg" alt="" />
+        <div>
+          <h3>Resort Surprises</h3>
+          <div class="surprises">
+            <div class="surprise">
+              <span>01</span>
+              <h4>Infinity Pool</h4>
+              <i class="fa-solid fa-person-swimming"></i>
+            </div>
+            <div class="surprise">
+              <span>02</span>
+              <h4>The Beach</h4>
+              <i class="fa-solid fa-umbrella-beach"></i>
+            </div>
+            <div class="surprise">
+              <span>03</span>
+              <h4>Beach Sunset</h4>
+              <i class="fa-solid fa-house-tsunami"></i>
+            </div>
+            <div class="surprise">
+              <span>04</span>
+              <h4>Beach Activities</h4>
+              <i class="fa-solid fa-water"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rooms -->
+      <section id="rooms">
+        <div class="section_title">
+          <h2>Luxury</h2>
+          <h3>Rooms</h3>
+        </div>
+        <p>
+          Times Palace lets you enjoy breathtaking Sea view, beaches, surfing &
+          water sports, Thai spa, fabulous dining, and exceptional event venue.
+          There’s so much to discover and it’s all steps away.
+        </p>
+
+        <div class="owl-carousel rooms_carousel owl-theme">
+          <div class="item">
+            <div class="room">
+              <img src="./media/r1.jpg" alt="" />
+              <div class="room_text">
+                <h3>Super Delux King</h3>
+                <span>475 Sft.</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="room">
+              <img src="./media/r2.jpg" alt="" />
+              <div class="room_text">
+                <h3>Super Delux Twin</h3>
+                <span>475 Sft.</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="room">
+              <img src="./media/r3.jpg" alt="" />
+              <div class="room_text">
+                <h3>Panaroma Ocean Suite</h3>
+                <span>1500 Sft.</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="room">
+              <img src="./media/r4.jpg" alt="" />
+              <div class="room_text">
+                <h3>Infinity Ocean Suite</h3>
+                <span>500 Sft.</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="room">
+              <img src="./media/r5.jpg" alt="" />
+              <div class="room_text">
+                <h3>Junior Suite</h3>
+                <span>1000 Sft.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <div class="section_title">
+          <h2>Service</h2>
+          <h3>Services that <span>Times Palace</span> provides</h3>
+        </div>
+        <p>
+          Times Palace lets you enjoy breathtaking Sea view, beaches, surfing &
+          water sports, Thai spa, fabulous dining, and exceptional event venue.
+          There’s so much to discover and it’s all steps away.
+        </p>
+        <div class="services">
+          <div class="service">
+            <div class="image_container">
+              <img src="./media/s1.jpg" alt="" />
+            </div>
+            <h4>The Infinity Pool</h4>
+            <a href="#">View More</a>
+          </div>
+          <div class="service">
+            <div class="image_container">
+              <img src="./media/s2.jpg" alt="" />
+            </div>
+            <h4>Casablanca Restaurant</h4>
+            <a href="#">View More</a>
+          </div>
+          <div class="service">
+            <div class="image_container">
+              <img src="./media/s3.jpg" alt="" />
+            </div>
+            <h4>Marina Hall</h4>
+            <a href="#">View More</a>
+          </div>
+          <div class="service">
+            <div class="image_container">
+              <img src="./media/s4.jpg" alt="" />
+            </div>
+            <h4>Tararom Spa</h4>
+            <a href="#">View More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <!-- Surprises section -->
+      <section id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14476.897613242372!2d91.84944335541991!3d24.890326099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750551dd330436f%3A0xf3019a6c312161d9!2sTimes%20IT!5e0!3m2!1sen!2sbd!4v1688275464485!5m2!1sen!2sbd"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div>
+          <h3>Things to do</h3>
+          <p>
+            Stay at Sayeman and enjoy the following activities at our private
+            beach:
+          </p>
+          <div class="surprises">
+            <div class="surprise">
+              <h4>Jet Ski</h4>
+              <i class="fa-solid fa-person-swimming"></i>
+            </div>
+            <div class="surprise">
+              <h4>Kayak</h4>
+              <i class="fa-solid fa-umbrella-beach"></i>
+            </div>
+            <div class="surprise">
+              <h4>Surf Board</h4>
+              <i class="fa-solid fa-house-tsunami"></i>
+            </div>
+            <div class="surprise">
+              <h4>Beach Bike</h4>
+              <i class="fa-solid fa-water"></i>
+            </div>
+            <div class="surprise">
+              <h4>Beach Chairs</h4>
+              <i class="fa-solid fa-water"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div>
+          <a href="#">Home</a>
+          <a href="#">Accommodations</a>
+          <a href="#">Restaurents & Bar</a>
+          <a href="#">Meetings & Events</a>
+          <a href="#">Relaxations</a>
+        </div>
+        <div>
+          <a href="#">Recreations</a>
+          <a href="#">Online Booking</a>
+          <a href="#">Gallery</a>
+          <a href="#">Special Offers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <span>TIMES PALACE</span>
+          <p>Level 4, Surma Tower, Puran Puler Mukh, Sylhet 3100</p>
+        </div>
+        <div>
+          <span>Join Us</span>
+          <div class="footer_social_links">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <span>&copy; 2023 TIMES PALACE. All rights reserved.</span>
+          <a
+            href="https://shahsaminyasar.github.io/webio.bd/portfolio/2/index.html"
+            target="_blank"
+            >Site by Shah Samin Yasar</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Owl Carousel 2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".rooms_carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          800: {
+            items: 2,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+    </script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
